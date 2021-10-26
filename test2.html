@@ -11,8 +11,7 @@
   </div>
   <script>
     $(function () {
-      var url="http://www.highcharts.com/samples/data/jsonp.php?a=e&filename=" +
-              "aapl-ohlc.json&callback=?";
+      var url="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/aapl-c.json";
       $.getJSON(url, function(data) {
         $('#container').highcharts('StockChart', {
           rangeSelector: {selected : 1},
